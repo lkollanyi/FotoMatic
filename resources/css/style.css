@@ -11,6 +11,11 @@
 
 
 /*#region -----------#Universal Styles -------------------------------------------*/
+.unchecked {
+  width: 100%;
+  overflow: hidden;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -55,8 +60,10 @@ html {
 
 header {
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 100;
-  width: 100%;
+  width: 100vw;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
 }
@@ -79,6 +86,7 @@ header .logo {
 header nav ul {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 nav li {
@@ -122,6 +130,11 @@ header .mobile {
   
 }
 @media only screen and (max-width: 760px) and (min-width: 481px) {    /* Tablet size */
+  
+  header nav li {
+    padding-left: 1rem;
+  }
+  
   header .tablet .button{
     display: block;
     padding: .1875rem .5rem;
@@ -130,6 +143,8 @@ header .mobile {
     color: white;
     white-space: nowrap;
   }
+
+
 } 
 
 @media only screen and (max-width: 480px) {                       /* Mobile size */
