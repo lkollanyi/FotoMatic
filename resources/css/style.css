@@ -439,14 +439,26 @@ header .mobile {
 
 #quotes-section {
   background-color: #f3f3f3;
+  width: 100%;
+  margin: 0;
 }
 
-#quotes-section content {
-  padding: 5rem 0;
+#quotes-section .content {
+  padding: 5rem 1rem;
+  
 }
 
-#quotes-section quote {
+#quotes-section .content ul {
+  display: flex;
+  justify-content: center;
+}
+
+#quotes-section .content li .quote {
   padding-right: 1.875rem;
+}
+
+
+#quotes-section .quote {
   font-family: "Palatino", serif;
   font-size: 1.875rem;
   line-height: 1.1;
@@ -454,21 +466,22 @@ header .mobile {
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
+  padding-left: 1.875rem;
 }
 
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
+  #quotes-section .content {
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
